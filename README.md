@@ -1,3 +1,4 @@
+
 # Mastering Git
 This project is used to demonstrate some lesser known git commands.
 
@@ -22,7 +23,7 @@ git clone -b my-other-branch https://github.com/cosminbratu/git-tutorial.git git
 ```
 ### Short status
 We often use the status command to show the stage contents, but it's pretty verbose
-```console
+```bash
 git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -52,3 +53,14 @@ The left hand side is a two letter code and the common ones are:
 - D - deleted
 - ?? - untracked
 - ' ' - unmodified
+
+### Ignore lists
+By default, git tracks all files in a given repo. You can tell it to exclude different files by creating a ```.gitignore``` file in the root.
+For a very good general starting point of git ignore files, you can use the GitHub collection of useful templates found at: https://github.com/github/gitignore.
+
+### Skipping the staging area
+You usually add/remove the files you want to commit and then call the ```git commit``` command. This is a two step command. If you know that you want to commit all tracked files, you can run
+```bash
+git commit -a -m "I'm sure it works"
+```
+and git adds everything to the staging area and then performs the commit.
