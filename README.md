@@ -64,3 +64,17 @@ You usually add/remove the files you want to commit and then call the ```git com
 git commit -a -m "I'm sure it works"
 ```
 and git adds everything to the staging area and then performs the commit.
+
+### Tags
+Tags are usually used to mark important points in the lifetime of projects, usually releases. We usually create annotated tags, being at the head of the branch
+```bash
+git tag -a v1.0 -m "Release 1.0"
+```
+Tags are not pushed to remote servers by default. We have to do it manually
+```bash
+git push origin v1.0
+```
+But if you passed the commit you wanted to tag (or you forgot), you can easily tag past commits
+```bash
+git tag -a v1.2 commit_sha
+```
