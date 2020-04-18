@@ -3,26 +3,26 @@ This project is used to demonstrate some lesser known git commands.
 
 ### Configuring the default editor for git messages
 By default git uses your system default editor. To change it to something with an UI, for example, you can configure it as such
-```bash
+```sh
 git config --global core.editor subl
 ```
 ### Cloning repos
 The basic command is
-```bash
+```sh
 git clone https://github.com/cosminbratu/git-tutorial.git
 ```
 It clones the ```master``` branch of the repo and stores the changes in a folder with the same name as the repo ```git-tutorial```.
 If you want a different branch, you use the ```-b``` argument
-```bash
+```sh
 git clone -b my-other-branch https://github.com/cosminbratu/git-tutorial.git
 ```
 If you want to specify a different output folder
-```bash
+```sh
 git clone -b my-other-branch https://github.com/cosminbratu/git-tutorial.git git-tutorial-my-other-branch
 ```
 ### Short status
 We often use the status command to show the stage contents, but it's pretty verbose
-```bash
+```sh
 git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -41,7 +41,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 There is a short version, called by ```--short (or -s)```. This displays the files along with symbols for denoting the different stages
-```bash
+```sh
 git status -s
  M README.md
 ?? new_file
