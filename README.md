@@ -1,4 +1,5 @@
 # git-tutorial
 Git tutorial project
 
-My first commit!
+Configuring the default editor for git messages
+```bash git config --global core.editor subl```
