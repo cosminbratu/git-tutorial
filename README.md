@@ -63,6 +63,7 @@ You usually add/remove the files you want to commit and then call the ```git com
 ```bash
 git commit -a -m "I'm sure it works"
 ```
+<<<<<<< HEAD
 and git adds everything to the staging area and then performs the commit.
 
 ### Tags
@@ -78,3 +79,4 @@ But if you passed the commit you wanted to tag (or you forgot), you can easily t
 ```bash
 git tag -a v1.2 commit_sha
 ```
+and git adds everything to the staging area and then performs the commit.
